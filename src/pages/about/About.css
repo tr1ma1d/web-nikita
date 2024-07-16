@@ -1,0 +1,11 @@
+.welcome_title{
+    width: 50%;
+    height: 200px;
+    background-color: #a1a1a1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.welcome__title{
+    font: 400 34px/34px 'Montserrat', sans-serif;
+}
