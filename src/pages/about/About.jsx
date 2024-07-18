@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 import GalleryForms from '../../components/UI/GalleryFroms/GalleryForms';
@@ -18,10 +17,15 @@ const About = () => {
                         </h2>
                     </div>
                     <GalleryForms />
-
+                    <div className="link-container">
+                        <p className="link-container__text">
+                            Recently, I have been working on a side wallpaper project.
+                        </p>
+                        <a href="/wallpaper" className="link">View Wallpaper →</a>
+                    </div>
                 </div>
             </main>
-            <Footer/>
+            <Footer />
         </div>
     );
 };
