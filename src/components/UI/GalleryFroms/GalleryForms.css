@@ -19,8 +19,7 @@
     overflow: hidden;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    opacity: 0;
-    animation: show-image 1s forwards;
+   
 }
 
 .gallery-item_wrapper {
@@ -42,13 +41,3 @@
     transition: transform 0.3s ease;
 }
 
-@keyframes show-image {
-    0% {
-        top: 100px;
-        opacity: 0;
-    }
-    100% {
-        top: 0px;
-        opacity: 1;
-    }
-}
