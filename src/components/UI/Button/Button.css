@@ -4,5 +4,11 @@ button{
     width: 200px;
     height: 50px;
     font: 400 18px/18px 'Montserrat', sans-serif;
+    transition: color 2s ease;
+    transition: background-color 2s ease;
 }
 
+button:hover{
+    background-color: black;
+    color: white;
+}
