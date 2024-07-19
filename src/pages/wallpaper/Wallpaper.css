@@ -1,0 +1,97 @@
+.swiper-container {
+    height: 700px;
+}
+
+.title_swiper {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    margin: 150px auto;
+    border-radius: 16px;
+    
+}
+
+.title {
+    font: 400 34px/40px 'Montserrat', sans-serif;
+}
+.list-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Измените на row, если хотите горизонтальный слайдер */
+    width: 100%;
+    margin-top: 5%;
+}
+
+.wallpaper-container {
+    width: 80%; /* Измените на нужную ширину */
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15%; /* Отступ между элементами */
+}
+
+.image-container{
+    width: 350px;
+    height: 280px;
+    background-color: #666;
+    border-radius: 15px;
+}
+
+.image-container img {
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+    
+}
+.image-container img,
+.wallpaper-container{
+    border-radius: 15px;
+}
+
+.wallpaper_description {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    padding: 0 20px;
+}
+
+.title_description {
+    font-size: 24px;
+    font-weight: bold;
+    font: 500 24px/24px 'Montserrat', sans-serif;
+    display: start;
+}
+
+.text_description {
+    margin: 0;
+    font-size: 16px;
+    color: #666;
+    font: 400 18px/18px 'Montserrat', sans-serif;
+    text-align: start;
+    margin: 10px 0;
+}
+
