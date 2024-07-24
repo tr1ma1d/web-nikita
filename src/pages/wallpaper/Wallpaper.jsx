@@ -27,7 +27,7 @@ const AnimatedSection = ({ refElement, hasBeenVisible, image, title, description
             <div className="wallpaper_description">
                 <h2 className="title_description">{title}</h2>
                 <p className="text_description">{description}</p>
-                <Button url = {downloadUrl}>Усатновить</Button>
+                <Button url={downloadUrl}>Усатновить</Button>
             </div>
         </animated.div>
     );

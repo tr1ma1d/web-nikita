@@ -1,0 +1,71 @@
+:root {
+    --main-font: 300 16px/24px 'Montserrat', sans-serif;
+}
+
+.wrapper-contact {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: 550px;
+    padding: 20px;
+}
+
+.wrapper-author {
+    grid-column: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.image {
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+}
+
+.author-description {
+    font-family: 'Montserrat', sans-serif;
+    margin: 20px 10px;
+}
+
+.author__name {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.author__description {
+    font-size: 24px;
+}
+
+
+.contact-form {
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e5e5e5;
+    width: 400px;
+    padding: 20px 0;
+    border-radius: 20px;
+}
+
+
+input {
+    width: 300px;
+    height: 30px;
+    margin: 7px 0;
+}
+
+textarea {
+    width: 300px;
+    height: 150px;
+    margin: 7px 0;
+    resize: none;
+}
+
+
+input,
+textarea {
+    font: var(--main-font);
+    border: 2px gray solid;
+    border-radius: 5px;
+    padding: 0 10px;
+}
