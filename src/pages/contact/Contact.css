@@ -1,71 +1,114 @@
 :root {
     --main-font: 300 16px/24px 'Montserrat', sans-serif;
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --background-color: #f8f9fa;
+}
+.contact-main__container{
+    display: flex;
+    justify-content: center;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
 }
 
 .wrapper-contact {
     display: grid;
     grid-template-columns: 1fr 2fr;
+    gap: 20px;
     height: 550px;
     padding: 20px;
+    align-items: center;
+    width: 50%;
 }
 
 .wrapper-author {
-    grid-column: 1;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 .image {
     width: 250px;
     height: 250px;
-    border-radius: 20px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .author-description {
-    font-family: 'Montserrat', sans-serif;
-    margin: 20px 10px;
+    margin-top: 20px;
 }
 
 .author__name {
     font-size: 32px;
     font-weight: bold;
+    color: var(--primary-color);
 }
 
 .author__description {
     font-size: 24px;
+    color: var(--secondary-color);
 }
 
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+}
 
 .contact-form {
-    grid-column: 2;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #e5e5e5;
-    width: 400px;
-    padding: 20px 0;
+    width: 600px;
+    background-color: white;
+    padding: 30px 40px;
     border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-
-input {
-    width: 300px;
-    height: 30px;
-    margin: 7px 0;
-}
-
-textarea {
-    width: 300px;
-    height: 150px;
-    margin: 7px 0;
-    resize: none;
-}
-
-
-input,
-textarea {
-    font: var(--main-font);
-    border: 2px gray solid;
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 2px solid #ccc;
     border-radius: 5px;
-    padding: 0 10px;
+    font: var(--main-font);
+    transition: border-color 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+.contact-forwidthm button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font: var(--main-font);
+    margin-top: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: darken(var(--primary-color), 10%);
+    transform: translateY(-2px);
+}
+
+.contact-form button:active {
+    background-color: darken(var(--primary-color), 15%);
+    transform: translateY(0);
 }

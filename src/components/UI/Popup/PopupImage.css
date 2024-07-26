@@ -1,0 +1,57 @@
+/* src/ImagePopup.css */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    animation: open-popup 1s ease forwards;
+  }
+  
+  .popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  /* Убираем hover эффект */
+  .popup-close:hover,
+  .popup-close:focus,
+  .popup-close:active {
+    background: transparent;
+  }
+  .popup-image {
+    max-width: 100%;
+    max-height: 80vh;
+  }
+  
+
+
+@keyframes open-popup {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

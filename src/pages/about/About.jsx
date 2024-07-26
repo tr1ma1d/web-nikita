@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
+import ScrollButton from '../../components/UI/ScrollButton/ScrollButton';
 import { useSpring, animated } from 'react-spring';
 import GalleryForms from '../../components/UI/GalleryFroms/GalleryForms';
 import './About.css';
@@ -97,6 +98,7 @@ const About = () => {
                 </animated.div>
             </main>
             <Footer />
+            <ScrollButton />
         </div>
     );
 };

@@ -23,10 +23,10 @@ app.post('/send', async (req, res) => {
     try {
         // Создание транспортера
         const transporter = nodemailer.createTransport({
-            service: 'gmail',
+            service: 'mail.ru',
             auth: {
-                user: process.env.EMAIL_USER || 'tikmusatovniktok@gmail.com', // Используйте переменные окружения
-                pass: process.env.EMAIL_PASS || 'T1kT0kdlyM3',
+                user: 'lalasket_mus@list.ru', // Используйте переменные окружения
+                pass: 'G4xPwYSbYvyfHWyQx6M9',
             },
         });
 
@@ -38,9 +38,9 @@ app.post('/send', async (req, res) => {
         console.log('Message:', message);
 
         const mailOptions = {
-            from: email,
+            from: 'lalasket_mus@list.ru',
             to: 'musatovla3xnikita@gmail.com',
-            subject: `Message from ${name}`,
+            subject: `Message from ${name, email}`,
             text: message,
         };
 

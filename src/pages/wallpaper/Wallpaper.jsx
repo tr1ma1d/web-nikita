@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 import Button from '../../components/UI/Button/Button';
+import ScrollButton from '../../components/UI/ScrollButton/ScrollButton';
 import { Pagination, Autoplay } from 'swiper/modules';
 import './Wallpaper.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -145,6 +146,7 @@ const Wallpaper = () => {
                 </div>
             </main>
             <Footer />
+            <ScrollButton />
         </div>
     );
 };
